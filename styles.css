@@ -1,0 +1,54 @@
+body {
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.large-play-btn {
+	color: white;
+	background-color: red;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 8px 26px;
+}
+
+/* NABAR NABAR NABAR NABAR NABAR NABAR NABAR NABAR NABAR NABAR NABAR NABAR */
+
+.logo {
+	color: red !important;
+	font-family: 'Bebas Neue';
+	font-size: 45px;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+}
+
+.header-container {
+	width: 80%;
+}
+
+.navbar-scroll {
+    background-color: rgba(0, 0, 0) !important;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.8);
+}
+
+/* LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
+
+header {
+	background-image: url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: inset 3500px 0 0 0 rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 1);
+    min-height: 80vh;
+    border-bottom: 6px solid grey;
+}
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+	.header-container {
+		width: 90%;
+	}
+}
