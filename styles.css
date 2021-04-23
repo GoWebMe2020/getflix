@@ -1,11 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 body {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Roboto', sans-serif;
 	color: white;
+	margin: 0;
+	padding: 0;
 }
 
 .large-play-btn {
@@ -30,13 +28,6 @@ body {
 	width: 95%;
 }
 
-.navbar-scroll {
-    background-color: rgba(0, 0, 0) !important;
-    transition: 0.5s;
-    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.8);
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.8);
-}
-
 /* LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
 
 header {
@@ -44,9 +35,9 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: inset 3500px 0 0 0 rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 1);
-    min-height: 80vh;
-    border-bottom: 6px solid grey;
+	border-color: rgba(0, 0, 0, 1);
+	min-height: 80vh;
+	border-bottom: 6px solid #383838;
 }
 
 .landing_page {
@@ -58,9 +49,9 @@ header {
 .landing_page_block {
 	display: block;
 	width: 40%;
-	margin-top: 220px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	text-align: center;
-	
 }
 
 .landing_page_h1 {
@@ -85,30 +76,48 @@ header {
 	margin-bottom: 20px;
 }
 
-.lp_box2 input{
-	width: 60%;
-	height: 70px;
-	border: none;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-	font-weight: 300;
-	padding: 0 15px;
-	box-shadow: 0px 0px 24px 0px rgba(255,255,255,0.81) inset;
-	-webkit-box-shadow: 0px 0px 24px 0px rgba(255,255,255,0.81) inset;
-	-moz-box-shadow: 0px 0px 24px 0px rgba(255,255,255,0.81) inset; 
+.lp_box2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.lp_box2 a{
-	margin-left: -3px;
-	width: 39%;
-	padding: 12px 35px 21px 35px;
-	font-size: 30px;
-	border: none;
-	border-left: 2px solid grey;
-	font-weight: 300;
-	color: white;
-	background-color: red;
-	text-decoration: none;
+.lp_box2 .input-div{
+	height: 70px;
+	width: 60%;
+}
+
+.lp_box2 .button-div{
+	height: 70px;
+	width: 40%;
+}
+
+.lp_box2>.input-div>input {
+  height: 70px;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  font-weight: 300;
+  padding-left: 15px;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.81) inset;
+  -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.81) inset;
+  box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.81) inset;
+}
+
+.get_started_btn {
+  height: 70px;
+  width: 100%;
+  font-size: 30px;
+  border: none;
+  border-left: 2px solid #383838;
+  font-weight: 300;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* DISPLAY CASES DISPLAY CASES DISPLAY CASES DISPLAY CASES DISPLAY CASES */
@@ -117,9 +126,9 @@ header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 45vh;
+	min-height: 45vh;
 	background-color: black;
-	border-bottom: 5px solid grey;
+	border-bottom: 5px solid #383838;
 }
 
 .display_case_row {
@@ -152,6 +161,75 @@ header {
 	width: 70%;
 	z-index: -5;
 }
+
+/* ASKED QUESTIONS ASKED QUESTIONS ASKED QUESTIONS ASKED QUESTIONS ASKED QUESTIONS */ 
+
+.faq_display {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 80vh;
+	background-color: black;
+	border-bottom: 5px solid #383838;
+}
+
+.faq_display_row {
+	display: block;
+	text-align: center;
+	width: 40%;
+	margin-top: 70px;
+}
+
+.faq_block {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 10px 11px 10px;
+	background-color: #383838;
+}
+
+.faq {
+	font-weight: 300;
+	letter-spacing: 1.2px;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.footer_display {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 50vh;
+	background-color: black;
+	border-bottom: 5px solid #383838;
+	color: grey;
+	font-weight: 100;
+	
+}
+
+.footer_display a {
+	text-decoration: none;
+	color: grey;
+}
+
+.flexing {
+	display: block;
+	width: 60%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.footer_display_row {
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+
+.footer_display_row ul {
+	list-style-type: none;
+	line-height: 2.5;
+}
+
+
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
